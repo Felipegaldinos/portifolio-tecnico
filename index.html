@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Silva - Desenvolvedor Front-End | Portfólio</title>
+    <meta name="description" content="Portfólio de Felipe Silva, desenvolvedor front-end especializado em React, TypeScript e tecnologias modernas. Veja meus projetos e entre em contato.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Carregando portfólio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Felipe Silva</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" onclick="showAllProjects()">Todos os Projetos</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="hero-pattern"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Olá, eu sou</span>
+                            <span class="title-name">Felipe Silva</span>
+                            <span class="title-role">Desenvolvedor Front-End</span>
+                        </h1>
+                        <p class="hero-description">
+                            Apaixonado por transformar ideias em interfaces funcionais e modernas. 
+                            Especializado em React, TypeScript e tecnologias web avançadas.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-code"></i>
+                                Ver Projetos
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i>
+                                Entre em Contato
+                            </a>
+                        </div>
+                        <div class="hero-social">
+                            <a href="https://linkedin.com/in/felipe-silva" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/felipe-silva" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:felipe@email.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Felipe Silva - Desenvolvedor Front-End" />
+                            </div>
+                            <div class="profile-info">
+                                <h3>Felipe Silva</h3>
+                                <p>Front-End Developer</p>
+                                <div class="profile-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">3+</span>
+                                        <span class="stat-label">Anos</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">50+</span>
+                                        <span class="stat-label">Projetos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="section-subtitle">Conheça minha trajetória e habilidades</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-description">
+                            Sou desenvolvedor web com experiência em React, TypeScript e Firebase. 
+                            Atualmente estudo Análise e Desenvolvimento de Sistemas e participo de 
+                            projetos freelance e open-source.
+                        </p>
+                        <p class="about-description">
+                            Minha paixão é criar interfaces que não apenas funcionem perfeitamente, 
+                            mas que também proporcionem experiências memoráveis aos usuários.
+                        </p>
+                        <div class="about-skills">
+                            <h3>Principais Tecnologias</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" onclick="downloadCV()" class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" alt="Desenvolvedor trabalhando" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projetos Destacados</h2>
+                    <p class="section-subtitle">Alguns dos projetos que desenvolvi utilizando as mais modernas tecnologias web</p>
+                    <button onclick="showAllProjects()" class="btn btn-primary">
+                        Ver Todos os Projetos
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Vamos conversar sobre seu próximo projeto</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>felipe@email.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (11) 99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>São Paulo, SP - Brasil</p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://linkedin.com/in/felipe-silva" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/felipe-silva" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/felipe-silva" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- All Projects Modal -->
+    <div id="projects-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Todos os Projetos</h2>
+                <button class="modal-close" onclick="closeProjectsModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-filters">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="project-search" placeholder="Buscar projetos...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="HTML">HTML</button>
+                    <button class="filter-btn" data-filter="CSS">CSS</button>
+                    <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+                    <button class="filter-btn" data-filter="React">React</button>
+                    <button class="filter-btn" data-filter="TypeScript">TypeScript</button>
+                </div>
+            </div>
+            <div class="modal-projects" id="modal-projects">
+                <!-- All projects will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <span class="footer-name">Felipe Silva</span>
+                    <span class="footer-role">Desenvolvedor Front-End</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/felipe-silva" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/felipe-silva" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:felipe@email.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 Felipe Silva. Todos os direitos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
